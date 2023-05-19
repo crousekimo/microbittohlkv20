@@ -34,9 +34,9 @@ namespace microbithlkv20 {
 
      export enum mode {
         //% block="測試"
-        test = '1',
+        test = 1,
         //% block="測試2"
-        AP = '0'
+        AP = 0
      }
     //% group="1.Setup"  
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
@@ -53,12 +53,10 @@ namespace microbithlkv20 {
         basic.pause(1000)
     }
     //% group="1.Setup"
-    //% blockId=setWiFi block="Set ESP32 | SSID %SSID| Pass %PASS| Mode %mode1 "
+    //% blockId=setWiFi block="return %word "
     //% weight=101
     //% blockExternalInputs = 1
-    export function setWiFi(SSID: string, PASS: string, mode1: mode) {
-        ssid1=SSID
-        pass1=PASS
-        mode2=mode1
+    export function setWiFi(word: string):bool {
+        return serial.readLine()
     }      
 }
