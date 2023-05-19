@@ -33,7 +33,7 @@ namespace microbithlkv20 {
      }
 
      export enum mode {
-        測試 = 1,
+        test = 1,
         AP = 0
      }
     //% group="1.Setup"  
