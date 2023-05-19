@@ -1,7 +1,7 @@
 {
-    "name": "microbitesp32",
+    "name": "microbithlkv20",
     "version": "0.1",
-    "description": "這是micro:bit的esp32控制積木",
+    "description": "這是micro:bit的hlkv20控制積木",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/microbitesp32-strings.json"
+        "_locales/zh/microbithlkv20-strings.json"
     ],
     "public": true
 }
