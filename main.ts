@@ -53,10 +53,9 @@ namespace microbithlkv20 {
         basic.pause(1000)
     }
     //% group="1.Setup"
-    //% blockId=setWiFi block="return %word "
+    //% blockId=returnresponse block="return %word "
     //% weight=101
-    //% blockExternalInputs = 1
-    export function setWiFi(word: string):bool {
+    export function returnresponse(word: string):bool {
         return serial.readLine()
     }      
 }
