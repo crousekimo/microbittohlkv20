@@ -55,7 +55,7 @@ namespace microbithlkv20 {
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
     //% weight=101
-    export function returnresponse(word: string):bool {
-        return serial.readLine()
+    export function returnresponse(word: string):boolean {
+        return false
     }      
 }
