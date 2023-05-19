@@ -33,6 +33,8 @@ namespace microbithlkv20 {
      }
 
      export enum mode {
+            export enum numberCommand {
+        //% block="測試"
         test = 1,
         AP = 0
      }
