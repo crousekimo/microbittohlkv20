@@ -34,9 +34,9 @@ namespace microbithlkv20 {
 
      export enum mode {
         //% block="測試"
-        test = 1,
+        test = '1',
         //% block="測試2"
-        AP = 0
+        AP = '0'
      }
     //% group="1.Setup"  
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
