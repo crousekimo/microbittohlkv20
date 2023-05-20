@@ -57,7 +57,7 @@
         //% block="打開開關"
         dakaikaiguan,
         //% block="關閉開關"
-        guaobikaiguan,
+        guanbikaiguan,
         //% block="打開殺菌"
         dakaishaj,
         //% block="關閉殺菌"
@@ -75,7 +75,7 @@
        //% block="一小時後開機"
        settiOonehonor
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guaobikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guanbikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
