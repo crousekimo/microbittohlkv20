@@ -63,7 +63,7 @@ let readserialdata='';
     //% weight=102
     export function returnserialdata1() {
            let a = serial.readBuffer(1)
-           readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
+           readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int16LE, 0))
     }
     //% group="1.Setup"
     //% blockId=returnresponse1 block="return key %word "
