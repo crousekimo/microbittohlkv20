@@ -24,11 +24,11 @@ namespace microbithlkv20 {
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
     //% weight=101
-    export function returnresponse():boolean {
-        return (serial.readUntil(serial.delimiters(Delimiters.NewLine)).includes("wakeup_uni"));
+    export function returnresponse(word: string):boolean {
+        return (serial.readUntil(serial.delimiters(Delimiters.NewLine)).includes(word));
     }     
     //% group="1.Setup"
-    //% blockId=words block="return %word "
+    //% blockId=words block="%word "
     //% weight=101
     export function words(word: mode):string {
         return check_word[word];
