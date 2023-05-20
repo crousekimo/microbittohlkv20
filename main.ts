@@ -60,15 +60,12 @@ namespace microbithlkv20 {
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
     //% weight=101
-    export function returnresponse(word: string):boolean {
+    export function returnresponse(word: string):string {
         let a=serial.readUntil(serial.delimiters(Delimiters.NewLine));
         let length1=a.length;
         let length2=word.length;
         let b=a.substr(length1-length2-1, length2);
-        if (b==word)
-          return true;
-        else
-          return false;
+        return b
     }     
     //% group="1.Setup"
     //% blockId=words block="%word "
