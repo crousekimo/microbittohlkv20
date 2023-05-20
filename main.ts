@@ -64,8 +64,8 @@ function k() {
     readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
 })
     //% group="1.Setup"
-    //% blockId=returnresponse block="return %word "
-    //% weight=101
+    //% blockId=returnresponse block="return key %word "
+    //% weight=102
     export function returnresponse1():string {
         return readserialdata;
     }  
