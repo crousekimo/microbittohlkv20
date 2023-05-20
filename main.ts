@@ -45,9 +45,51 @@
         //% block="打開吹風"
         dakaicfeng,
         //% block="關閉吹風"
-        kguanbicfeng
+        kguanbicfeng,
+//% block="打开饮水机"
+dakaiyingsji,
+//% block="关闭饮水机"
+guanbiyingsji,
+//% block="开始出水"
+kaishichus,
+//% block="關閉出水"
+gaunbichuchou,
+//% block="停止出水"
+tingzchus,
+//% block="打開電飯煲"
+guabdianfangbao,
+//% block="關閉電飯煲"
+dakdiangangbao,
+//% block="保温模式"
+baowenmos,
+//% block="煲湯模式"
+baotangmos,
+//% block="煮飯模式"
+zhufangmos,
+//% block="煮粥模式"
+zhuzhoumos,
+//% block="打開開關"
+dakaikaiguan,
+//% block="關閉開關"
+guaobikaiguan,
+//% block="打開殺菌"
+dakaishaj,
+//% block="關閉殺菌"
+guanbishaj,
+//% block="打開烘乾"
+dakaihonggan,
+//% block="關閉烘乾"
+guanbihonggan,
+//% block="打開除臭"
+dakaichuchou,
+//% block="關閉除臭"
+gaunbichuchou,
+//% block="一小時候關機"
+settiConehonor,
+//% block="一小時後開機"
+settiOonehonor
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","gaunbichuchou","tingzchus","guabdianfangbao","dakdiangangbao","baowenmos","baotangmos","zhufangmos","zhuzhoumos","dakaikaiguan","guaobikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
