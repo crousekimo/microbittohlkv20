@@ -7,7 +7,7 @@
         //% block="打開風扇"
         openElectricfan,
         //% block="關閉風扇"
-        closeElectricfan,
+        closElectricfan,
         //% block="風速調到1檔"
         AdjustGdarmin,
         //% block="風速調到3檔"
