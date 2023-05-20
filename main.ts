@@ -54,18 +54,6 @@
         kaishichus,
         //% block="停止出水"
         tingzchus,
-        //% block="打開電飯煲"
-        guabdianfangbao,
-        //% block="關閉電飯煲"
-        dakdiangangbao,
-        //% block="保温模式"
-        baowenmos,
-        //% block="煲湯模式"
-        baotangmos,
-        //% block="煮飯模式"
-        zhufangmos,
-        //% block="煮粥模式"
-        zhuzhoumos,
         //% block="打開開關"
         dakaikaiguan,
         //% block="關閉開關"
@@ -87,7 +75,7 @@
        //% block="一小時後開機"
        settiOonehonor
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","guabdianfangbao","dakdiangangbao","baowenmos","baotangmos","zhufangmos","zhuzhoumos","dakaikaiguan","guaobikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guaobikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
