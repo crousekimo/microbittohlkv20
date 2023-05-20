@@ -61,7 +61,7 @@ namespace microbithlkv20 {
     //% blockId=returnresponse block="return %word "
     //% weight=101
     export function returnresponse(word: string):string {
-        let a=serial.readUntil(serial.delimiters(Delimiters.NewLine));
+        let a=serial.readString();
         let length1=a.length;
         let length2=word.length;
         let b=a.substr(length1-length2, length1);
