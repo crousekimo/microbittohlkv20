@@ -62,7 +62,7 @@ namespace microbithlkv20 {
 function k() {
     let a = serial.readBuffer(1)
     readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
-})
+}
     //% group="1.Setup"
     //% blockId=returnresponse block="return key %word "
     //% weight=102
