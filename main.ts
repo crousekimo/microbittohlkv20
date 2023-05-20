@@ -31,9 +31,9 @@
         //% block="關燈"
         closeled,
         //% block="調到最亮"
-        setminld,
+        setmaxld,
         //% block="調到最暗"
-        turnoff,
+        setminld,
         //% block="亮一點"
         zeogjialiangdu,
         //% block="調暗一點"
