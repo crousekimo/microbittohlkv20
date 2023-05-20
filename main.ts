@@ -33,17 +33,17 @@
         //% block="調暗一點"
         jianxiaoliangdu,
         //% block="燈紅色"
-        setcolorred
+        setcolorred,
         //% block="打開浴霸"
-        dakaiyuba
+        dakaiyuba,
         //% block="關閉浴霸"
-        guanbiyuba
+        guanbiyuba,
         //% block="打開暖氣"
-        kdakainuanqi
+        kdakainuanqi,
         //% block="關閉暖氣"
-        kguanbinuanq
+        kguanbinuanq,
         //% block="打開吹風"
-        dakaicfeng
+        dakaicfeng,
         //% block="關閉吹風"
         kguanbicfeng
      }
