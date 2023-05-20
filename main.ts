@@ -29,7 +29,7 @@ namespace microbithlkv20 {
     //% group="1.Setup"
     //% blockId=words block="return %word "
     //% weight=101
-    export function returnresponse(word: mode):string {
+    export function words(word: mode):string {
         return word.toString();
     } 
 }
