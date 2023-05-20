@@ -64,7 +64,7 @@ namespace microbithlkv20 {
         let a=serial.readUntil(serial.delimiters(Delimiters.NewLine));
         let length1=a.length;
         let length2=word.length;
-        let b=a.substr(length1-length2-1, length2);
+        let b=a.substr(length1-length2-1, length1);
         return b
     }     
     //% group="1.Setup"
