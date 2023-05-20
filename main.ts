@@ -67,6 +67,7 @@ basic.forever(() => {
     //% blockId=returnresponse1 block="return key %word "
     //% weight=102
     export function returnresponse1():string {
+        readserialdata='';
         return readserialdata;
     }  
     //% group="1.Setup"
