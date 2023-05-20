@@ -41,7 +41,7 @@
         //% block="燈紅色"
         setcolorred
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closeElectricfan","AdjustGdarmin","AdjustGdarmax","settiOPonehonor","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setminld","turnoff","zeogjialiangdu","jianxiaoliangdu","setcolorred"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","AdjustGdarmin","AdjustGdarmax","settiOPonehonor","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setminld","turnoff","zeogjialiangdu","jianxiaoliangdu","setcolorred"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
