@@ -67,7 +67,7 @@ basic.forever(function () {
     //% blockId=returnresponse block="return %word "
     //% weight=101
     export function returnresponse(word: string):boolean {
-        if (readserialdata==word)
+        if (readserialdata.includes(word))
         {
           readserialdata='';
           return true
