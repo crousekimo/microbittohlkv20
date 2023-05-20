@@ -62,7 +62,7 @@ let readserialdata='';
     //% blockId=returnserialdata1 block="read"
     //% weight=102
     export function returnserialdata1() {
-           let a = serial.readBuffer(1)
+           let a = serial.readBuffer(2)
            readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.UInt8LE, 0));
     }
     //% group="1.Setup"
