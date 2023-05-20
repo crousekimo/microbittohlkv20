@@ -41,6 +41,7 @@
         //% block="燈紅色"
         setcolorred
      }
+let readserialdata='';
 let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closeElectricfan","AdjustGdarmin","AdjustGdarmax","settiOPonehonor","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setminld","turnoff","zeogjialiangdu","jianxiaoliangdu","setcolorred"];
 namespace microbithlkv20 {
     //% group="1.Setup"  
@@ -57,15 +58,21 @@ namespace microbithlkv20 {
         )
         basic.pause(1000)
     }
+
+basic.forever(function () {
+    a = serial.readBuffer(1)
+    readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
+})
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
     //% weight=101
     export function returnresponse(word: string):string {
-        let a=serial.readString();
-        let length1=a.length;
-        let length2=word.length;
-        let b=a.substr(length1-length2, length1);
-        return b
+        if (readserialdata==word)
+        {
+          readserialdata='';
+          return true
+        }else
+          return false
     }     
     //% group="1.Setup"
     //% blockId=words block="%word "
