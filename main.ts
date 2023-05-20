@@ -67,8 +67,9 @@ basic.forever(() => {
     //% blockId=returnresponse1 block="return key %word "
     //% weight=102
     export function returnresponse1():string {
+        let a=readserialdata;
         readserialdata='';
-        return readserialdata;
+        return a;
     }  
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
