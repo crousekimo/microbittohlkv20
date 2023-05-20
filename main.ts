@@ -8,12 +8,6 @@
         openElectricfan,
         //% block="關閉風扇"
         closElectricfan,
-        //% block="風速調到1檔"
-        AdjustGdarmin,
-        //% block="風速調到3檔"
-        AdjustGdarmax,
-        //% block="風速調到最大"
-        settiOPonehonor,
         //% block="打開空調"
         openkongtiao,
         //% block="關閉空調"
