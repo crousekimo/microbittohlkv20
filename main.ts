@@ -52,8 +52,8 @@
         guanbiyingsji,
         //% block="開始出水"
         kaishichus,
-        //% block="關閉出水"
-        gaunbichuchou,
+        //% block="停止出水"
+        tingzchus,
         //% block="停止出水"
         tingzchus,
         //% block="打開電飯煲"
