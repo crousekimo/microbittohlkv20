@@ -56,7 +56,9 @@ let readserialdata='';
             rx,
             baudrate
         )
-        basic.pause(1000)
+        basic.pause(100)
+        serial.setTxBufferSize(32)
+        serial.setRxBufferSize(32)
     }
     //% group="1.Setup"
     //% blockId=returnserialdata1 block="read"
@@ -64,14 +66,6 @@ let readserialdata='';
     export function returnserialdata1() {
            let a = serial.readBuffer(2)
            readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.UInt8LE, 0));
-    }
-    //% group="1.Setup"
-    //% blockId=returnresponse1 block="return key %word "
-    //% weight=102
-    export function returnresponse1():string {
-        let a1=readserialdata;
-        readserialdata='';
-        return a1;
     }  
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
