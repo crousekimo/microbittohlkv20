@@ -67,13 +67,14 @@ basic.forever(() => {
     //% blockId=returnresponse1 block="return key %word "
     //% weight=102
     export function returnresponse1():string {
+        let a='';
         for (let i=0;i<32;i++){
-        let a = serial.readBuffer(1)
-        readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
+          a = serial.readBuffer(1)
+          readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
         }
-        let a=readserialdata;
+        let a1=readserialdata;
         readserialdata='';
-        return a;
+        return a1;
     }  
     //% group="1.Setup"
     //% blockId=returnresponse block="return %word "
