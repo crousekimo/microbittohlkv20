@@ -5,6 +5,7 @@
         //% block="退下"
         exitUni
      }
+let check_word = ['wakeup_uni', 'exitUni'];
 namespace microbithlkv20 {
     //% group="1.Setup"  
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
@@ -30,6 +31,6 @@ namespace microbithlkv20 {
     //% blockId=words block="return %word "
     //% weight=101
     export function words(word: mode):string {
-        return word.toString();
+        return check_word[word];
     } 
 }
