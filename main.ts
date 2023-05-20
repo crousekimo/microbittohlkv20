@@ -34,8 +34,20 @@
         jianxiaoliangdu,
         //% block="燈紅色"
         setcolorred
+        //% block="打開浴霸"
+        dakaiyuba
+        //% block="關閉浴霸"
+        guanbiyuba
+        //% block="打開暖氣"
+        kdakainuanqi
+        //% block="關閉暖氣"
+        kguanbinuanq
+        //% block="打開吹風"
+        dakaicfeng
+        //% block="關閉吹風"
+        kguanbicfeng
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
