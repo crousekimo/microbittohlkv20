@@ -61,7 +61,7 @@ namespace microbithlkv20 {
     //% blockId=returnresponse block="return %word "
     //% weight=101
     export function returnresponse(word: string):boolean {
-        return (serial.readUntil(serial.delimiters(Delimiters.NewLine)).includes(word));
+        return (serial.readUntil(serial.delimiters(Delimiters.NewLine)).endsWith(word));
     }     
     //% group="1.Setup"
     //% blockId=words block="%word "
