@@ -58,14 +58,14 @@ namespace microbithlkv20 {
         )
         basic.pause(1000)
     }
+control.inBackground(function () {
+          let a = serial.readBuffer(1)
+          readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
+})
     //% group="1.Setup"
     //% blockId=returnresponse1 block="return key %word "
     //% weight=102
     export function returnresponse1():string {
-        for (let i=0;i<32;i++){
-          let a = serial.readBuffer(1)
-          readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.Int8LE, 0))
-        }
         let a1=readserialdata;
         readserialdata='';
         return a1;
