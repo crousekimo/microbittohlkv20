@@ -77,13 +77,9 @@
        //% block="加大音量"
        volumeUp,
        //% block="減少音量"
-       volumeDown,
-       //% block="最大音量"
-       volumeMax,
-       //% block="最小音量"
-       volumeMin
+       volumeDown
      }
-let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guanbikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor","volumeUp","volumeDown","volumeMax","volumeMin"];
+let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guanbikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor","volumeUp","volumeDown"];
 namespace microbithlkv20 {
 let readserialdata='';
     //% group="1.Setup"  
