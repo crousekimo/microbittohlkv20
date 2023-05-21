@@ -98,7 +98,6 @@ let readserialdata='';
         serial.setTxBufferSize(32)
         serial.setRxBufferSize(32)
     }
-    //% group="1.Setup"
     //% blockId=returnserialdata1 block="read"
     //% weight=50
     export function returnserialdata1() {
@@ -116,7 +115,6 @@ let readserialdata='';
         }else
           return false
     }     
-    //% group="1.Setup"
     //% blockId=words block="%word "
     //% weight=102
     export function words(word: mode):string {
