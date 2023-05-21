@@ -82,11 +82,11 @@
 let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","openkongtiao","closekongtiao","shenggaowendu","jiandiwendu","turnon","turnoff","openled","closeled","setmaxld","setminld","zeogjialiangdu","jianxiaoliangdu","setcolorred","dakaiyuba","guanbiyuba","kdakainuanqi","kguanbinuanq","dakaicfeng","kguanbicfeng","dakaiyingsji","guanbiyingsji","kaishichus","tingzchus","dakaikaiguan","guanbikaiguan","dakaishaj","guanbishaj","dakaihonggan","guanbihonggan","dakaichuchou","gaunbichuchou","settiConehonor","settiOonehonor","volumeUp","volumeDown"];
 namespace microbithlkv20 {
 let readserialdata='';
-    //% group="1.Setup"  
+
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
     //% tx.defl=SerialPin.P0
     //% rx.defl=SerialPin.P1
-    //% weight=101
+    //% weight=40
     //% blockExternalInputs = 1
     export function setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
@@ -100,12 +100,12 @@ let readserialdata='';
     }
     //% group="1.Setup"
     //% blockId=returnserialdata1 block="read"
-    //% weight=102
+    //% weight=50
     export function returnserialdata1() {
            let a = serial.readBuffer(1)
            readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.UInt8LE, 0));
     }  
-    //% group="1.Setup"
+
     //% blockId=returnresponse block="return %word "
     //% weight=101
     export function returnresponse(word: string):boolean {
@@ -118,7 +118,7 @@ let readserialdata='';
     }     
     //% group="1.Setup"
     //% blockId=words block="%word "
-    //% weight=101
+    //% weight=102
     export function words(word: mode):string {
         return check_word[word];
     } 
