@@ -86,7 +86,7 @@ let readserialdata='';
     //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
     //% tx.defl=SerialPin.P0
     //% rx.defl=SerialPin.P1
-    //% weight=40
+    //% weight=102
     //% blockExternalInputs = 1
     export function setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
@@ -99,14 +99,14 @@ let readserialdata='';
         serial.setRxBufferSize(32)
     }
     //% blockId=returnserialdata1 block="read"
-    //% weight=50
+    //% weight=101
     export function returnserialdata1() {
            let a = serial.readBuffer(1)
            readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.UInt8LE, 0));
     }  
 
     //% blockId=returnresponse block="return %word "
-    //% weight=101
+    //% weight=100
     export function returnresponse(word: string):boolean {
         if (readserialdata.includes(word))
         {
@@ -116,7 +116,7 @@ let readserialdata='';
           return false
     }     
     //% blockId=words block="%word "
-    //% weight=102
+    //% weight=99
     export function words(word: mode):string {
         return check_word[word];
     } 
