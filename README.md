@@ -1,4 +1,4 @@
-# MicrobitESP32
+# MicrobittoHLKv20
 
 Micro:Bit控制HLKv20積木
 
