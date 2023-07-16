@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-microbitesp32=github:crousekimo/microbittohlkv20
+hlkv20=github:crousekimo/microbittohlkv20
 ```
